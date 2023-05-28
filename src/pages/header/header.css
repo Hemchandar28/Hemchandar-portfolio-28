@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headercontainer .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 4%;
+    height: 70px;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 30px skyblue;
+}
+
+.headercontainer .navbar .title {
+    display: flex;
+    align-items: center;
+}
+
+.headercontainer .navbar h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 0 lightblue;
+}
+
+.headercontainer .navbar .nav {
+    display: flex;
+    align-items: center;
+}
+
+.headercontainer .navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.headercontainer .navbar nav ul li {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.headercontainer .navbar nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.headercontainer .navbar .nav .menuicons{
+    display: none; 
+}
+
+.navheader ul li {
+    padding: 10px 15px;
+}
+
+.navheader ul li:hover {
+    background-color:lightskyblue;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:860px) {
+    .headercontainer .navbar .nav .menuicons {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .navheader ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        gap: 20px;
+        background-color: lightskyblue;
+        padding-top: 20px;
+        z-index: 1;
+        height: 75vh;
+        top: 80px;
+        right: 4%;
+        transition: all .5s;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+    }
+
+    .navheader ul.active {
+        right: -100%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navheader ul li {
+        padding: 5px;
+    }
+
+    .navheader ul li:hover {
+        background-color: lightblue;
+    }
+}
+@media screen and (max-width:550px) {
+    .headercontainer .navbar .nav .menuicons {
+        display: block;
+        font-size: 25px;
+    }
+
+    .navheader ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        width: 100%;
+        gap: 10px;
+        padding-top: 20px;
+        height: auto;
+        top: 70px;
+        left: 0;
+        transition: all .5s;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .navheader ul.active {
+        left: -100%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navheader ul li {
+        padding: 5px;
+    }
+
+    .navheader ul li:hover {
+        background-color: lightblue;
+    }
+}

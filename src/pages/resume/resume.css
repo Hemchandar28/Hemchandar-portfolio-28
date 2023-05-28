@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resume-card h1 {
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+.resume-container {
+    width: 100%;
+    height: auto;
+}
+
+.resume-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resume-card .image {
+    margin-top: 40px;
+    height: 190vh;
+    width: 70%;
+    padding-top: 10px;
+    box-shadow: 5px 5px 20px skyblue;
+}
+
+.resume-card .image img {
+    height: 100%;
+    width:100%;
+    object-fit: fill;
+}
+
+.resume-card .button a{
+    text-decoration: none;
+    color: black;
+    font-weight:600 ;
+    font-family: calibri;
+    font-size: 20px;
+    background-color: skyblue;
+    padding: 13px 15px ;
+    border-radius: 15px;
+}
+
+.resume-card .button {
+    padding: 70px 0;
+}
+
+@media screen and (max-width:730px) {
+    .resume-card .image {
+        height: 190vh;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .resume-card .image {
+        margin-top: 40px;
+        height: auto;
+        width: 100%;
+        box-shadow: 5px 5px 20px skyblue;
+    }
+
+    .resume-card h1 {
+        font-size: 35px;
+        padding-top: 20px;
+    }
+
+    .resume-card .image img {
+        height: 100%;
+        width:100%;
+        object-fit: contain;
+    }
+}

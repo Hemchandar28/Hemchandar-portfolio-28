@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-container h1 {
+    text-align: center;
+    font-size: 60px;
+    padding-top: 80px;
+}
+
+.about-container h2 {
+    font-size: 30px;
+    padding: 0 15%;
+    padding-top: 30px;
+}
+
+.card1-about {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: auto auto;
+    padding: 0 15%;
+    gap: 50px;
+    padding-bottom: 1px;
+}
+
+.card1-about .box {
+    gap: 40px;
+    line-height: 30px;
+}
+
+.box h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.box h3 span {
+    font-family: arial;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.aboutMeBtn {
+    padding-top: 30px;
+    padding: 30px 0 0 15%;
+}
+
+.aboutMeBtn a{
+    text-decoration: none;
+    color: black;
+    font-weight:600 ;
+    font-family: calibri;
+    font-size: 20px;
+    background-color: skyblue;
+    padding: 13px 15px ;
+    border-radius: 15px;
+}
+
+.card2-about {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0 15%;
+}
+
+.card2-about .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 130px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    width: 130px;
+}
+
+.card2-about .box img {
+    width: 80px;
+    height: 80px;
+}
+
+.card2-about .box:hover {
+    background-color: lightskyblue;
+}
+
+.card3-about {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 15%;
+    gap: 40px;
+    padding: 20px 0 40px 0;
+}
+
+.card3-about .box i {
+    font-size: 30px;
+}
+
+.card3-about .box span {
+    font-size: 20px;
+    background-color: skyblue;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.card3-about h3 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.card3-about p {
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 5px;
+}
+
+@media screen and (max-width:850px) {
+    .card1-about {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .card2-about {
+        display: grid;
+        padding: 60px 0 40px 0;
+        grid-template-columns: auto auto;
+        margin: 0 15%;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        row-gap: 50px;
+    }
+
+    .card3-about {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 15%;
+        gap: 40px;
+        padding: 20px 0 40px 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .about-container h1 {
+        font-size: 40px;
+        padding: 30px 0;
+    }
+
+    .card3-about {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .about-container h2 {
+        font-size: 25px;
+        padding: 0 3%;
+    }
+
+    .aboutMeBtn {
+        padding: 50px 0 50px 33%;
+    }
+
+    .card1-about {
+        padding: 0 3%;
+        gap: 30px;
+    }
+
+    .card2-about {
+        padding: 30px 0 30px 0;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        row-gap: 30px;
+    }
+
+    .card3-about {
+        margin: 0 3%;
+        padding: 10px 0 40px 0;
+    }
+}
